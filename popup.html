@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GitHub Token</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      padding: 20px; 
+      min-width: 300px; /* 最小幅を設定 */
+    }
+    #token { 
+      width: 100%; 
+      box-sizing: border-box; /* パディングを幅に含める */
+      padding: 8px; 
+      margin-bottom: 10px; 
+    }
+    .button {
+      width: 100%; /* ボタンを全幅に */
+      padding: 8px 16px;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    #save { 
+      background-color: #007BFF; 
+    }
+    #save:hover { 
+      background-color: #0056b3; 
+    }
+    #publish { 
+      background-color: #28a745; 
+    }
+    #publish:hover { 
+      background-color: #218838; 
+    }
+  </style>
+</head>
+<body>
+  <h3>Enter your GitHub Token</h3>
+  <input type="text" id="token" placeholder="GitHub Token">
+  <button id="save" class="button">Save Token</button>
+
+  <h3>Publish Code to Gist</h3>
+  <button id="publish" class="button">Publish to Gist</button>
+
+  <div id="links" style="display: none; margin-top: 15px;">
+    <p><a id="gistLink" href="#" target="_blank">Gist URL</a></p>
+    <p><a id="dartpadLink" href="#" target="_blank">Dartpad URL</a></p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
