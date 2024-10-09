@@ -1,0 +1,11 @@
+{
+  "name": "dartpad-gist-publisher",
+  "version": "1.0.0",
+  "description": "Chrome extension to publish DartPad code to GitHub Gists",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
